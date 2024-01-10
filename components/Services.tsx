@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { servicesData } from "@/app/data/service";
+import { interestsData } from "@/app/data/interests";
 
 type Props = {};
 
@@ -16,11 +16,11 @@ export default function Services({}: Props) {
     <div className="mb-12 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
-          My Services
+          My Interests
         </h2>
         {/* grid items */}
         <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24">
-          {servicesData.map((item, index) => {
+          {interestsData.map((item, index) => {
             return (
               <Card
                 key={index}

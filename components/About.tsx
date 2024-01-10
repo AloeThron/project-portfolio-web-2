@@ -2,31 +2,25 @@
 
 import React from "react";
 
+import { GraduationCap, Briefcase } from "lucide-react";
+
 import DevImg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  GraduationCap,
-  Briefcase,
-} from "lucide-react";
-import {
-  infoData,
-  educationData,
-  experinceData,
-  skillData,
-} from "../app/data/about";
+import Skills from "./Skills";
+import { infoData, educationData, experinceData } from "../app/data/about";
 
 type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="xl:h-[860px] pb-12 xl:py-24">
+    <div className="xl:h-[860px] pb-12 xl:py-24 mb-12">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
         <div className="flex flex-col xl:flex-row">
           {/* image */}
-          <div className="hidden xl:flex flex-1 relative">
+          <div className="hidden xl:flex flex-1 relative items-center">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
               imgSrc="/about/developer.png"
@@ -54,9 +48,7 @@ export default function About({}: Props) {
                 {/* personal */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </h3>
+                    <h3 className="h3 mb-4">My Name is Patyos Rewmoolngam</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Velit, quis, doloribus officia consequuntur cupiditate
@@ -76,12 +68,6 @@ export default function About({}: Props) {
                           </div>
                         );
                       })}
-                    </div>
-                    {/* languages */}
-                    <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skill</div>
-                      <div className="border-b border-border"></div>
-                      <div>English, French, Spanish, Italian</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -161,46 +147,9 @@ export default function About({}: Props) {
                 {/* skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">Tools I Use Everyday</h3>
+                    <h3 className="h3 mb-8">Tools That I Use</h3>
                     {/* skill list */}
-                    <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                      <div className="border-b border-border mb-4"></div>
-                      <div>
-                        {skillData.map((item, index) => {
-                          return (
-                            <div
-                              key={index}
-                              className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                            >
-                              <div className="font-medium">{item.name}</div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                    {/* tools */}
-                    <div>
-                      <h4 className="text-xl font-semibold mb-2">Tools</h4>
-                      <div className="border-b border-border mb-4"></div>
-                      {/* tool list */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {/* {getData<ToolData>(toolData, "Tools")?.data.map(
-                          (item, index) => {
-                            const { imgPath } = item;
-                            return (
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                priority
-                                alt=""
-                              />
-                            );
-                          }
-                        )} */}
-                      </div>
-                    </div>
+                    <Skills />
                   </div>
                 </TabsContent>
               </div>

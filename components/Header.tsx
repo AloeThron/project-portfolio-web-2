@@ -38,7 +38,7 @@ export default function Header({}: Props) {
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Logo />
+          <h1 className="h3">My Portfolio</h1>
           <div className="flex items-center gap-x-6">
             {/* nav */}
             <Nav

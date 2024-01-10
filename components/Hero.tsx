@@ -26,10 +26,9 @@ export default function Hero({}: Props) {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1 mb-4">Hello, my name is Ryan Davis</h1>
+            <h1 className="h1 mb-4">Transforming Idea Into Digital Reality</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.
+            Turning big ideas into tangible digital experiences.  Harness technology, design, and creative magic to bridge the gap between imagination and reality.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -54,28 +53,28 @@ export default function Hero({}: Props) {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={0}
-              badgeText="Year Of Experience"
+              endCountNum={2}
+              badgeText="Fullstack Projects"
             />
             {/* badge 2 */}
             <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
-              endCountNum={4}
-              badgeText="Finished Project"
+              endCountNum={2}
+              badgeText="Frontend Projects"
             />
             {/* badge 3 */}
             <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={4}
-              endCountText="k"
-              badgeText="Happy Client"
+              endCountNum={10}
+              endCountText=""
+              badgeText="Workshops"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-              imgSrc="/hero/developer.png"
+              imgSrc="/hero/code-svgrepo-com.svg"
             />
           </div>
         </div>

@@ -12,10 +12,7 @@ export type Icons = {
 };
 
 export const icons: Icons[] = [
-  {
-    path: "/",
-    name: <RiYoutubeFill />,
-  },
+
   {
     path: "/",
     name: <RiLinkedinFill />,
@@ -23,13 +20,5 @@ export const icons: Icons[] = [
   {
     path: "/",
     name: <RiGithubFill />,
-  },
-  {
-    path: "/",
-    name: <RiFacebookFill />,
-  },
-  {
-    path: "/",
-    name: <RiInstagramFill />,
   },
 ];

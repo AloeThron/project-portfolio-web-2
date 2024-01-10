@@ -25,26 +25,18 @@ export type Experience = {
   years: string;
 };
 
-export type SkillData = {
-  name: string;
-};
-
-export type ToolData = {
-  imgPath: string;
-};
-
 export const infoData: InfoData[] = [
   {
     icon: <User2 size={20} />,
-    text: "Ryan Davis",
+    text: "Tong (Nickname)",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+012 345 6789",
+    text: "+6695-910-4025",
   },
   {
     icon: <MailIcon size={20} />,
-    text: "+012 345 6789",
+    text: "Patyos.work@gmail.com",
   },
   {
     icon: <Calendar size={20} />,
@@ -52,76 +44,26 @@ export const infoData: InfoData[] = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "MS Sci",
+    text: "Bachelor's degree",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "321, US",
+    text: "BangChak, Babgkok",
   },
 ];
 
 export const educationData: Education[] = [
   {
-    university: "Ex Univesity",
-    qualification: "BH Sci",
-    years: "2020",
-  },
-  {
-    university: "Ex Univesity",
-    qualification: "BH Sci",
-    years: "2020",
-  },
-  {
-    university: "Ex Univesity",
-    qualification: "BH Sci",
-    years: "2020",
+    university: "Chulalongkorn University",
+    qualification: "Allied Health Sciences",
+    years: "2021",
   },
 ];
 
 export const experinceData: Experience[] = [
   {
-    company: "Ex Univesity",
-    role: "BH Sci",
-    years: "2020",
-  },
-  {
-    company: "Ex Univesity",
-    role: "BH Sci",
-    years: "2020",
-  },
-  {
-    company: "Ex Univesity",
-    role: "BH Sci",
-    years: "2020",
-  },
-];
-
-export const skillData: SkillData[] = [
-  {
-    name: "HTML",
-  },
-  {
-    name: "CSS",
-  },
-  {
-    name: "HTML",
-  },
-  {
-    name: "HTML",
-  },
-];
-
-export const toolData: ToolData[] = [
-  {
-    imgPath: "/about/vscode.svg",
-  },
-  {
-    imgPath: "/about/figma.svg",
-  },
-  {
-    imgPath: "/about/notion.svg",
-  },
-  {
-    imgPath: "/about/wordpress.svg",
+    company: "No Experience",
+    role: "-",
+    years: "-",
   },
 ];

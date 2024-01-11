@@ -17,7 +17,7 @@ export const projectData: ProjectData[] = [
     image: "/work/task-app-copy.png",
     category: "fullstack",
     name: "Task App",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description: "Helps your team to move work forward.",
     link: "https://project-task-app-two.vercel.app/",
     github: "https://github.com/AloeThron/project-task-app",
     tools: [

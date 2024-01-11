@@ -7,6 +7,7 @@ import ThemeToggler from "./ThemeToggler"; // component
 import Logo from "./Logo"; // component
 import Nav from "./Nav"; // component
 import MobileNav from "./MobileNav"; // component
+import Link from "next/link";
 
 type Props = {};
 
@@ -38,7 +39,9 @@ export default function Header({}: Props) {
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <h1 className="h3">My Portfolio</h1>
+          <Link href={"/"}>
+            <h1 className="h3">My Portfolio</h1>
+          </Link>
           <div className="flex items-center gap-x-6">
             {/* nav */}
             <Nav

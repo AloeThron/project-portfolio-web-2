@@ -78,7 +78,7 @@ export default function Hero({}: Props) {
               viewport={{ once: false, amount: 0.4 }}
             >
               <Socials
-                containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+                containerStyles="flex justify-center gap-x-6 xl:justify-start"
                 iconsStyles="text-foreground text text-[22px] hover:text-primary transition-all"
               />
             </motion.div>
@@ -95,7 +95,7 @@ export default function Hero({}: Props) {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={2}
+              endCountNum={3}
               badgeText="Fullstack Projects"
             />
             {/* badge 2 */}
@@ -109,7 +109,7 @@ export default function Hero({}: Props) {
             <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={10}
+              endCountNum={16}
               endCountText=""
               badgeText="Workshops"
             />

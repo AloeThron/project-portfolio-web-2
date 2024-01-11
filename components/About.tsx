@@ -76,10 +76,7 @@ export default function About({}: Props) {
                   >
                     <h3 className="h3 mb-4">My Name is Patyos Rewmoolngam</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Velit, quis, doloribus officia consequuntur cupiditate
-                      laborum nisi quos neque minus voluptate, nesciunt nemo ut
-                      dolore eos repudiandae placeat culpa ipsum veniam.
+                    A self-motivated and self-improvement present with a passion in Web Development, Machine Learning and Design. Now seeking to join in tech company as a web developer to driving products to bridge the gap between people and technology. Brings analytical thinking, collaboration, and communication skills.
                     </p>
                     {/* icons */}
                     <motion.div

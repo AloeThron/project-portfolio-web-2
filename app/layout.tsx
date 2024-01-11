@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "My Portfolio",
   description: "Portfolio for job between",
   icons: {
-    icon: "https://img.icons8.com/parakeet/48/000000/user.png",
+    icon: "https://img.icons8.com/fluency/48/000000/user-male-circle--v1.png",
   },
 };
 

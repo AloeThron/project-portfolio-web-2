@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+
+import { motion } from "framer-motion";
 
 import {
   Card,
@@ -8,18 +12,31 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { interestsData } from "@/app/data/interests";
+import { fadeIn } from "@/variants";
 
 type Props = {};
 
 export default function Services({}: Props) {
   return (
-    <div className="mb-12 xl:mb-36">
+    <section id="interest" className="mb-24 xl:mb-48">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
+        <motion.h2
+          variants={fadeIn("down", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.4 }}
+          className="section-title mb-12 xl:mb-24 text-center mx-auto"
+        >
           My Interests
-        </h2>
+        </motion.h2>
         {/* grid items */}
-        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.4 }}
+          className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24"
+        >
           {interestsData.map((item, index) => {
             return (
               <Card
@@ -40,8 +57,8 @@ export default function Services({}: Props) {
               </Card>
             );
           })}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

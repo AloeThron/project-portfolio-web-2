@@ -6,6 +6,7 @@ import { motion } from "framer-motion"; // framer motion
 
 type Links = {
   path: string;
+  locate: string;
   name: string;
 };
 
@@ -15,10 +16,17 @@ type Props = {
   underlineStyles?: string;
 };
 
-const links: Links[] = [
-  { path: "/", name: "home" },
-  { path: "/projects", name: "My projects" },
-  { path: "/contact", name: "contact" },
+const links1: Links[] = [
+  { path: "/", locate: "hero", name: "home" },
+  { path: "/", locate: "aboutme", name: "aboutme" },
+  { path: "/", locate: "interest", name: "interests" },
+  { path: "/projects", locate: "projects", name: "projects" },
+];
+
+const links2: Links[] = [
+  { path: "/", locate: "/", name: "home" },
+  { path: "/projects", locate: "projects", name: "My projects" },
+  // { path: "/contact", name: "contact" },
 ];
 
 export default function Nav({
@@ -29,7 +37,7 @@ export default function Nav({
   const path = usePathname();
   return (
     <div className={`${containerStyles}`}>
-      {links.map((link, index) => {
+      {links2.map((link, index) => {
         return (
           <Link
             href={link.path}

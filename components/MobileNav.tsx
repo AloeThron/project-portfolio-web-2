@@ -24,7 +24,7 @@ export default function MobileNav({}: Props) {
         <SheetClose asChild>
           <div className="flex flex-col items-center justify-between h-full py-8">
             <div className="flex flex-col items-center gap-y-32">
-              <Logo />
+              <h1 className="h3">My Portfolio</h1>
               <Nav
                 containerStyles="flex flex-col items-center gap-y-6"
                 linkStyles="text-2xl"

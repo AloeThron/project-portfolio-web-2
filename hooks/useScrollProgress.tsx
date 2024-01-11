@@ -22,5 +22,6 @@ export default function useScrollProgress() {
     return () => window.removeEventListener("scroll", updateScrollCompletion);
   }, []);
 
+  
   return completion;
 }

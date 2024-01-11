@@ -3,6 +3,10 @@
 import Image from "next/image";
 import React from "react";
 
+import { motion } from "framer-motion";
+
+import { fadeIn } from "@/variants";
+
 type Props = {};
 
 type Skill = {
@@ -36,6 +40,9 @@ const skillData: Skill[] = [
   },
   {
     imgPath: "/about/tailwindcss.svg",
+  },
+  {
+    imgPath: "/about/shadcn.svg",
   },
   {
     imgPath: "/about/redux.png",
@@ -97,32 +104,57 @@ export default function Skills({}: Props) {
   return (
     <div>
       {/* skills */}
-      <div className="mb-8">
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="mb-8"
+      >
         <h4 className="text-xl font-semibold mb-2">Skills</h4>
         <div className="border-b border-border mb-4"></div>
         <div className="flex gap-8 justify-center xl:justify-start flex-wrap">
           {skillData.map((item, index) => {
             const { imgPath } = item;
             return (
-              <Image src={imgPath} width={48} height={48} priority alt="" />
+              <Image
+                src={imgPath}
+                width={48}
+                height={48}
+                priority
+                alt=""
+                key={index}
+              />
             );
           })}
         </div>
-      </div>
+      </motion.div>
       {/* soon */}
-      <div>
+      <motion.div
+        variants={fadeIn("left", 0.6)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+      >
         <h4 className="text-xl font-semibold mb-2">Soon..</h4>
         <div className="border-b border-border mb-4"></div>
         {/* tool list */}
-        <div className="flex gap-8 justify-center xl:justify-start">
+        <div className="flex gap-8 justify-center xl:justify-start flex-wrap">
           {skillSoon.map((item, index) => {
             const { imgPath } = item;
             return (
-              <Image src={imgPath} width={48} height={48} priority alt="" />
+              <Image
+                src={imgPath}
+                width={48}
+                height={48}
+                priority
+                alt=""
+                key={index}
+              />
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

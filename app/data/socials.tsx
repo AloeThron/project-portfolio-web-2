@@ -14,11 +14,11 @@ export type Icons = {
 export const icons: Icons[] = [
 
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/patyos-r/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/AloeThron",
     name: <RiGithubFill />,
   },
 ];

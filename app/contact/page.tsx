@@ -37,12 +37,12 @@ export default function Contact({}: Props) {
             {/* address */}
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>324, USA</div>
+              <div>Bangchak, Babgkok</div>
             </div>
             {/* phone */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+66-546-7865</div>
+              <div>+6695-910-4025</div>
             </div>
           </div>
           <Form />

@@ -6,6 +6,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { Github, Link2Icon } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { ProjectData } from "../app/data/projects";
 
 type Props = {
   project: {
@@ -15,7 +16,12 @@ type Props = {
     description: string;
     link: string;
     github: string;
+    tools: Skill[];
   };
+};
+
+type Skill = {
+  imgPath: string;
 };
 
 export default function ProjectCard({ project }: Props) {
@@ -25,7 +31,7 @@ export default function ProjectCard({ project }: Props) {
         {/* image */}
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 bg-work_project_bg_light dark:bg-work_project_bg_dark bg-no-repeat overflow-hidden bg-center">
           <Image
-            className="absolute bottom-0 shadow-2xl"
+            className="absolute bottom-0 shadow-2xl rounded-t-lg"
             src={project.image}
             width={247}
             height={250}
@@ -53,8 +59,28 @@ export default function ProjectCard({ project }: Props) {
         <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
           {project.category}
         </Badge>
-        <h4 className="h4 mb-1">{ProjectCard.name}</h4>
-        <p className="text-muted-foreground text-lg">{project.description}</p>
+        <div className="h-[180px]">
+        <h4 className="h4 mb-1">{project.name}</h4>
+        <p className="text-muted-foreground text-lg mb-4">
+          {project.description}
+        </p>
+        <div className="flex gap-2 flex-wrap">
+          {project.tools.map((item, index) => {
+            const { imgPath } = item;
+            return (
+              <Image
+                src={imgPath}
+                width={32}
+                height={32}
+                priority
+                alt=""
+                key={index}
+                className="h-[32px]"
+              />
+            );
+          })}
+        </div>
+        </div>
       </div>
     </Card>
   );

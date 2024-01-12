@@ -136,8 +136,8 @@ export const projectData: ProjectData[] = [
     category: "frontend",
     name: "Hotel Web",
     description: "Book an awesome room in less than 1 minute.",
-    link: "/",
-    github: "/",
+    link: "https://project-hotel-web-1.vercel.app/",
+    github: "https://github.com/AloeThron/project-hotel-web-1",
     tools: [
       {
         imgPath: "/about/nextjs.svg",

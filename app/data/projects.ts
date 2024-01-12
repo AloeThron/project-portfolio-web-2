@@ -132,10 +132,10 @@ export const projectData: ProjectData[] = [
     ],
   },
   {
-    image: "/work/1.png",
+    image: "/work/hotel.png",
     category: "frontend",
     name: "Hotel Web",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description: "Book an awesome room in less than 1 minute.",
     link: "/",
     github: "/",
     tools: [

@@ -11,7 +11,7 @@ import "swiper/css/pagination"; // swiper styles
 
 import { Button } from "@/components/ui/button";
 import ProjectCard from "./ProjectCard"; // swiper component
-import { projectData } from "../app/data/projects";
+import { projectData } from "@/data/projects";
 import { fadeIn } from "@/variants";
 
 type Props = {};

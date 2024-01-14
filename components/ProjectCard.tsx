@@ -6,7 +6,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { Github, Link2Icon } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
-import { ProjectData } from "../app/data/projects";
+import { ProjectData } from "@/data/projects";
 
 type Props = {
   project: {

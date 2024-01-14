@@ -225,7 +225,7 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/AloeThron/workshop-payment-management",
     tools: [
       {
-        imgPath: "/about/nextjs.svg",
+        imgPath: "/about/vite.png",
       },
       {
         imgPath: "/about/typescript.png",

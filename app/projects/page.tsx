@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
-import { projectData } from "../data/projects";
+import { projectData } from "@/data/projects";
 
 type Props = {};
 

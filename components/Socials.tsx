@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { icons } from "@/app/data/socials";
+import { icons } from "@/data/socials";
 
 type Props = {
   containerStyles: string;

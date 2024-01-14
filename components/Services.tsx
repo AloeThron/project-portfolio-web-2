@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { interestsData } from "@/app/data/interests";
+import { interestsData } from "@/data/interests";
 import { fadeIn } from "@/variants";
 
 type Props = {};

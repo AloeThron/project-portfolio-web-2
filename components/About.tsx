@@ -8,7 +8,7 @@ import { GraduationCap, Briefcase } from "lucide-react";
 import DevImg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Skills from "./Skills";
-import { infoData, educationData, experinceData } from "../app/data/about";
+import { infoData, educationData, experinceData } from "@/data/about";
 import { fadeIn } from "@/variants";
 
 type Props = {};

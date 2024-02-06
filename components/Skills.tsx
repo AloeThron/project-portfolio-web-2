@@ -77,6 +77,9 @@ const skillData: Skill[] = [
   {
     imgPath: "/about/docker.png",
   },
+  {
+    imgPath: "/about/turborepo.png",
+  },
 ];
 
 const skillSoon: Skill[] = [

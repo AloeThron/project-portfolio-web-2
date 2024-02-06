@@ -71,15 +71,15 @@ const skillData: Skill[] = [
   {
     imgPath: "/about/figma.png",
   },
-];
-
-const skillSoon: Skill[] = [
   {
     imgPath: "/about/golang.svg",
   },
   {
     imgPath: "/about/docker.png",
   },
+];
+
+const skillSoon: Skill[] = [
   {
     imgPath: "/about/graphql.png",
   },

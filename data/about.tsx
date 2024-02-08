@@ -62,8 +62,18 @@ export const educationData: Education[] = [
 
 export const experinceData: Experience[] = [
   {
-    company: "No Experience",
-    role: "-",
-    years: "-",
+    company: "FINNOMENA",
+    role: "Investment Consultant (Part-time)",
+    years: "Nov 2022 - Present",
+  },
+  {
+    company: "KIH",
+    role: "Medical Technology (Full-time)",
+    years: "Nov 2021 - Jun 2023",
+  },
+  {
+    company: "Fastwork",
+    role: "Freelance (Part-time)",
+    years: "Jan 2018 - May 2020",
   },
 ];

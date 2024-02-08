@@ -7,11 +7,13 @@ import { Github, Link2Icon } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { ProjectData } from "@/data/projects";
+import { cn } from "@/lib/utils";
 
 type Props = {
   project: {
     image: string;
     category: string;
+    fix: boolean;
     name: string;
     description: string;
     link: string;
@@ -29,7 +31,7 @@ export default function ProjectCard({ project }: Props) {
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
         {/* image */}
-        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 bg-work_project_bg_light dark:bg-work_project_bg_dark bg-no-repeat overflow-hidden bg-center">
+        <div className={`relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 bg-work_project_bg_light dark:bg-work_project_bg_dark bg-no-repeat overflow-hidden bg-center`}>
           <Image
             className="absolute bottom-0 shadow-2xl rounded-t-lg"
             src={project.image}
@@ -60,6 +62,9 @@ export default function ProjectCard({ project }: Props) {
       <div className="h-full px-8 py-6">
         <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
           {project.category}
+        </Badge>
+        <Badge className={cn(`uppercase text-sm font-medium mb-2 absolute top-12 left-5 ${project.fix ? "bg-slate-500" : "Available"}`)}>
+          {project.fix ? "Not available" : "Available"}
         </Badge>
         <div className="h-[180px]">
           <h4 className="h4 mb-1">{project.name}</h4>

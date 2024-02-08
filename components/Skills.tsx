@@ -79,7 +79,7 @@ const skillData: Skill[] = [
   },
   {
     imgPath: "/about/turborepo.png",
-  },
+  }
 ];
 
 const skillSoon: Skill[] = [

@@ -1,6 +1,7 @@
 export type ProjectData = {
   image: string;
   category: string;
+  fix: boolean;
   name: string;
   description: string;
   link: string;
@@ -14,8 +15,41 @@ type Skill = {
 
 export const projectData: ProjectData[] = [
   {
+    image: "/work/event-app.png",
+    category: "fullstack",
+    fix: false,
+    name: "Event App",
+    description: "Host, Connect, Celebrate: Your Events, Our Platform!",
+    link: "https://project-event-app.vercel.app/",
+    github: "https://github.com/AloeThron/project-event-app",
+    tools: [
+      {
+        imgPath: "/about/nextjs.svg",
+      },
+      {
+        imgPath: "/about/typescript.png",
+      },
+      {
+        imgPath: "/about/tailwindcss.svg",
+      },
+      {
+        imgPath: "/about/shadcn.svg",
+      },
+      {
+        imgPath: "/about/clerk.svg",
+      },
+      {
+        imgPath: "/about/stripe.svg",
+      },
+      {
+        imgPath: "/about/mongodb.svg",
+      },
+    ],
+  },
+  {
     image: "/work/task-app-copy.png",
     category: "fullstack",
+    fix: true,
     name: "Task App",
     description: "Helps your team to move work forward.",
     link: "https://project-task-app-two.vercel.app/",
@@ -48,12 +82,13 @@ export const projectData: ProjectData[] = [
     ],
   },
   {
-    image: "/work/event-app.png",
+    image: "/work/travel-app.png",
     category: "fullstack",
-    name: "Event App",
-    description: "Host, Connect, Celebrate: Your Events, Our Platform!",
-    link: "https://project-event-app.vercel.app/",
-    github: "https://github.com/AloeThron/project-event-app",
+    fix: true,
+    name: "Travel App",
+    description: "Travel around the world.",
+    link: "https://project-travel-blog.vercel.app/",
+    github: "https://github.com/AloeThron/project-travel-blog",
     tools: [
       {
         imgPath: "/about/nextjs.svg",
@@ -68,10 +103,10 @@ export const projectData: ProjectData[] = [
         imgPath: "/about/shadcn.svg",
       },
       {
-        imgPath: "/about/clerk.svg",
+        imgPath: "/about/next-auth.png",
       },
       {
-        imgPath: "/about/stripe.svg",
+        imgPath: "/about/prisma.png",
       },
       {
         imgPath: "/about/mongodb.svg",
@@ -81,6 +116,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/ecommerce-app.png",
     category: "fullstack",
+    fix: false,
     name: "Ecommerce App",
     description: "Top Fashion for a top price!",
     link: "https://project-ecommerce-web-pi.vercel.app/",
@@ -109,6 +145,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/restaurant-web.png",
     category: "frontend",
+    fix: false,
     name: "Restaurant Web",
     description: "A taste of local flavours.",
     link: "https://project-restaurant-web-2.vercel.app/",
@@ -134,6 +171,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/hotel.png",
     category: "frontend",
+    fix: false,
     name: "Hotel Web",
     description: "Book an awesome room in less than 1 minute.",
     link: "https://project-hotel-web-1.vercel.app/",
@@ -159,6 +197,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/anime-vault.png",
     category: "workshop",
+    fix: false,
     name: "Anime Vault",
     description: "Motion and Infinite scroll.",
     link: "https://workshop-anime-vault.vercel.app/",
@@ -181,6 +220,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/social-dashboard.png",
     category: "workshop",
+    fix: false,
     name: "Social Media Dashboard",
     description: "Social Media Dashboard and Light/Dark Mode.",
     link: "https://workshop-social-dashboard.vercel.app/",
@@ -200,6 +240,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/tv-show.png",
     category: "workshop",
+    fix: false,
     name: "TV Shows",
     description: "TV Shows, Search filter.",
     link: "https://workshop-tv-show-app.vercel.app/",
@@ -219,6 +260,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/payment-manage.png",
     category: "workshop",
+    fix: false,
     name: "Payment Management",
     description: "Typescript check.",
     link: "https://workshop-payment-management.vercel.app/",
@@ -238,6 +280,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/dynamic-dropdown.png",
     category: "workshop",
+    fix: false,
     name: "Dydamic Dropdown",
     description: "Dydamic Dropdown and Filter.",
     link: "https://workshop-dynamic-dropdown.vercel.app/",
@@ -257,6 +300,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/shopping-cart.png",
     category: "workshop",
+    fix: false,
     name: "Shopping Cart",
     description: "Edit Cart Items.",
     link: "https://workshop-shopping-cart.vercel.app/",
@@ -276,6 +320,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/currency-converter.png",
     category: "workshop",
+    fix: false,
     name: "Currency Converter",
     description: "Currency Converter.",
     link: "https://workshop-currency-converter.vercel.app/",
@@ -295,6 +340,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/quiz-app.png",
     category: "workshop",
+    fix: false,
     name: "Quiz Application",
     description: "Exam test and total score.",
     link: "https://workshop-quiz-app.vercel.app/",
@@ -314,6 +360,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/form-validation.png",
     category: "workshop",
+    fix: false,
     name: "Form Validation",
     description: "Form login validation.",
     link: "https://workshop-form-validation.vercel.app/",
@@ -333,6 +380,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/stopwatch.png",
     category: "workshop",
+    fix: false,
     name: "Stopwatch",
     description: "Stopwatch and reset.",
     link: "https://workshop-stopwatch.vercel.app/",
@@ -352,6 +400,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/bmi-cal.png",
     category: "workshop",
+    fix: false,
     name: "Quiz Application",
     description: "Exam test and total score.",
     link: "https://workshop-bmi-calculator.vercel.app/",
@@ -371,6 +420,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/countries-search.png",
     category: "workshop",
+    fix: false,
     name: "Countries App",
     description: "Countries Search Filter.",
     link: "https://workshop-countries-search-filter.vercel.app/",
@@ -390,6 +440,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/ran-noti.png",
     category: "workshop",
+    fix: false,
     name: "Toast Notification",
     description: "Random Notification.",
     link: "https://workshop-random-notification.vercel.app/",
@@ -409,6 +460,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/temp-convert.png",
     category: "workshop",
+    fix: false,
     name: "Temperature Converter",
     description: "Temperature Converter in Celcius, Farenheit and Kelvin.",
     link: "https://workshop-temperature-converter.vercel.app/",
@@ -428,6 +480,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/pagination.png",
     category: "workshop",
+    fix: false,
     name: "Random Images Pagination",
     description: "Random Images Pagination.",
     link: "https://workshop-random-image.vercel.app/",
@@ -447,6 +500,7 @@ export const projectData: ProjectData[] = [
   {
     image: "/work/sound-board.png",
     category: "workshop",
+    fix: false,
     name: "Media Player",
     description: "Media player play pause replay.",
     link: "https://workshop-sound-board.vercel.app/",
